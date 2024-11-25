@@ -37,61 +37,7 @@
 
     <!-- home section start -->
     <section class="home" id="home">
-        <div class="max-width">
-            <style>
-                @property --a {
-                    syntax: '<angle>';
-                    initial-value: 0deg;
-                    inherits: false;
-                }
-
-                .card {
-                    overflow: hidden;
-                    position: relative;
-                    width: min(12.5em, 40vmin);
-                    aspect-ratio: 2;
-                    border-radius: 0.5em;
-
-                    place-self: center;
-                    place-content: center;
-                    padding: 0.5em;
-                    color: #ededed;
-                    font: clamp(1em, 2vw + 2vh, 2em) sans-serif;
-                    text-align: center;
-                    text-transform: uppercase;
-                    text-wrap: balance;
-                    margin-bottom: 2rem; /* Add space below card */
-                }
-
-                .card::before {
-                    position: absolute;
-                    z-index: -1;
-                    inset: -1em;
-                    border: solid 1.25em;
-                    border-image: 
-                        conic-gradient(from var(--a), #669900, #99cc33, #ccee66, 
-                                    #006699, #3399cc, #990066, #cc3399, 
-                                    #ff6600, #ff9900, #ffcc00, #669900) 1;
-                    filter: blur(0.75em);
-                    animation: a 4s linear infinite;
-                    content: '';
-                }
-
-                @keyframes a { to { --a: 1turn } }
-
-                body {
-                    background: 
-                        url(https://images.unsplash.com/photo-1729824346255-52a8f898fe84?w=1400) 
-                        50%/cover #212121;
-                    background-blend-mode: multiply;
-                }
-            </style>
-
-            <button class="card">
-                Hire Me
-            </button>
-
-            
+        <div class="max-width">        
             <div class="home-content">
                 <div class="text-1">Hey, My Name is</div>
                 <div class="text-2">MAYUR SHINDE</div>
